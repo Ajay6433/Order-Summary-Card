@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.frame{
+    width: 25vw;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 12px;;
+}
+.header{
+    height: 30%;
+    width: 100%;
+    background: url(images/illustration-hero.svg) ;
+    background-size: contain;
+}
+.content{
+    background-color: #fff;
+    height: 70%;
+    text-align: center;
+}
+.content h2{
+    color: rgb(2, 3, 29);
+    padding: 22px 15px;
+}
+.content p{
+    color: #70798B;    
+    line-height: 22px;
+    font-weight: 300;
+}
+.pricing{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing img{
+    width: 40px;
+    height: 40px;   
+}
+.pricing .price{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.price span:nth-child(2){
+    font-size: 12px;
+    color: #70798B;        
+}
+.price span{
+    margin: 2px 0;
+}
+.pricing a{
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+}
+.pricing a:hover{
+    color: hsl(253, 53%, 51%);
+}
+
+.content button{
+    width: 80%;
+    padding: 8px 10px;
+    margin: 3px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.content .confirm{
+    background: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2);
+}
+.content .confirm:hover{
+    background: hsl(253, 53%, 51%);
+}
+.content .cancel{
+    background: transparent;
+}
+@media only screen and (max-width: 400px){
+    .frame{
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 12px;;
+    } 
+    .header{
+        height: 30%;
+        width: 100%;
+        background: url(images/illustration-hero.svg) no-repeat;
+        background-size: cover;
+    }
+    .content p{
+        width: 80%;
+        margin: auto;
+    }
+}
